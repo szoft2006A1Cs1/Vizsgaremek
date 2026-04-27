@@ -1,0 +1,262 @@
+.page-container {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f4f7f6;
+}
+
+.content-area {
+    margin-left: 250px; 
+    padding: 40px;
+    flex: 1;
+    width: calc(100% - 250px);
+    box-sizing: border-box;
+}
+
+.header-section {
+    margin-bottom: 30px;
+}
+
+.header-section h1 {
+    margin: 0 0 10px 0;
+    color: #1a202c;
+    font-size: 2rem;
+}
+
+.header-section p {
+    margin: 0;
+    color: #718096;
+    font-size: 1.1rem;
+}
+
+.dash-card {
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.dash-card h3 {
+    margin-top: 0;
+    color: #2d3748;
+    border-bottom: 2px solid #f0f2f5;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.lesson-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.lesson-item {
+    background: #fdfdfd;
+    border: 1px solid #e2e8f0;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 4px solid #1877f2;
+}
+
+.lesson-item.completed {
+    border-left-color: #a0aec0;
+    background: #f7fafc;
+}
+
+.lesson-info {
+    line-height: 1.6;
+}
+
+.lesson-info strong {
+    font-size: 1.1rem;
+    color: #2d3748;
+}
+
+.lesson-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.status-badge {
+    font-weight: 700;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+}
+
+.status-foglalt {
+    color: #c53030;
+    background: #fed7d7;
+}
+
+.status-szabad {
+    color: #2b6cb0;
+    background: #bee3f8;
+}
+
+.status-teljesitve {
+    color: #4a5568;
+    background: #e2e8f0;
+}
+
+.btn-cancel {
+    background: white;
+    color: #c53030;
+    border: 1px solid #c53030;
+    padding: 8px 15px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-cancel:hover {
+    background: #c53030;
+    color: white;
+}
+
+.empty-state {
+    color: #718096;
+    text-align: center;
+    padding: 30px;
+    font-style: italic;
+    background: #f7fafc;
+    border-radius: 8px;
+}
+
+
+@media (max-width: 900px) {
+    .content-area {
+        margin-left: 0 !important; 
+        width: 100% !important;
+        padding: 15px !important;
+        padding-top: 75px !important; 
+    }
+    
+    .header-section h1 {
+        font-size: 1.5rem !important;
+    }
+
+    .dash-card {
+        padding: 20px !important;
+    }
+
+    .lesson-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .lesson-actions {
+        width: 100%;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+}
+
+.dashboard-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.filter-buttons {
+    display: flex;
+    gap: 5px;
+    background: #f1f5f9;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.filter-buttons button {
+    border: none;
+    background: transparent;
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #64748b;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.filter-buttons button.active {
+    background: white;
+    color: #1877f2;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.time-text {
+    font-size: 12px;
+    color: #718096;
+}
+
+.cat-badge-small {
+    background: #f1f5f9;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.row-completed {
+    background-color: #f8fafc;
+    opacity: 0.8;
+}
+
+.empty-row {
+    text-align: center;
+    padding: 40px !important;
+    color: #94a3b8;
+    font-style: italic;
+}
+
+.action-cell {
+    display: flex;
+    gap: 8px;
+}
+
+.btn-save-small, .btn-cancel-small {
+    padding: 6px 12px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-save-small {
+    background: #28a745;
+    color: white;
+    border: none;
+}
+
+.btn-cancel-small {
+    background: white;
+    color: #dc3545;
+    border: 1px solid #dc3545;
+}
+
+.btn-cancel-small:hover {
+    background: #dc3545;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .dashboard-controls {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .filter-buttons {
+        width: 100%;
+        overflow-x: auto;
+    }
+}

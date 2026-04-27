@@ -1,0 +1,46 @@
+.regist-card {
+    height: 90vh;
+}
+
+.regist-card .left-side {
+    background: url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&q=80&w=1000') no-repeat center center;
+    background-size: cover;
+}
+
+.checkbox-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    margin: 5px 0;
+}
+
+.regist-error {
+    color: #d93025;
+    background: #fdf2f2;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    margin-bottom: 4px;
+    border-left: 3px solid #d93025;
+}
+
+.regist-success {
+    background: #e6fffa;
+    color: #2c7a7b;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 15px;
+    border: 1px solid #81e6d9;
+}
+
+.btn-login-link {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    color: #666;
+    text-decoration: none;
+    font-size: 14px;
+}
