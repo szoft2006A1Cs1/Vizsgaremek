@@ -1,4 +1,5 @@
 Jogsifoglaló Alkalmazás – Vizsgaremek
+
 Ez a projekt egy autósiskolai órafoglaló rendszer, amely a tanulók, oktatók és adminisztrátorok közötti folyamatokat digitalizálja és teszi egyszerűbbé.
 
 Funkciók
@@ -53,6 +54,7 @@ Indítsa el a fejlesztői szervert:
 npm run dev
 
 Készítők
+
 Csaba Bence
 
 Takács Barnabás
